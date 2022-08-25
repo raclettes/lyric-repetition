@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lyric-repetition"
+version = "0.1.0"
+description = "A simple python program to visualise the repetition in a song"
+license = "MIT"
+authors = [
+    "amcwb <jacob@elementsoftworks.co.uk>",
+    "laundmo <laurinschmidt2001@gmail.com>",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Pillow = "^9.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+generate = "lyric_repetition.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
